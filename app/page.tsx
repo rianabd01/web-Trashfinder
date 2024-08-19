@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import NavigationWrapper from "./ui/navigation/nav-wrapper";
 import SwiperCards from "./ui/swiper/swiper-cards";
+import UploadImage from "./ui/upload-image";
 
 export default function Home() {
   return (
@@ -50,9 +51,7 @@ export default function Home() {
 
           <div className="flex flex-wrap mt-10">
             <div className="flex flex-row md:flex-col gap-2 flex-[1]">
-              <input type="file" />
-              <input type="file" />
-              <input type="file" />
+              <UploadImage />
             </div>
             <div className="flex-[2]">
               <form action="" className="flex flex-col flex-[2] bg-slate-300">
