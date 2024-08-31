@@ -1,0 +1,52 @@
+{
+  "trash": [
+    {
+      "id": "1",
+      "title": "Sampah Plastik di Sungai",
+      "location": "Jakarta",
+      "image": "https://placehold.co/400"
+    },
+    {
+      "id": "2",
+      "title": "Tumpukan Sampah di TPS Ilegal",
+      "location": "Bandung",
+      "image": "https://placehold.co/400"
+    },
+    {
+      "id": "3",
+      "title": "Botol Plastik Berserakan di Pantai",
+      "location": "Bali",
+      "image": "https://placehold.co/400"
+    },
+    {
+      "id": "4",
+      "title": "Sampah Organik di Pasar Tradisional",
+      "location": "Surabaya",
+      "image": "https://placehold.co/400"
+    },
+    {
+      "id": "5",
+      "title": "Limbah Pabrik di Sungai",
+      "location": "Medan",
+      "image": "https://placehold.co/400"
+    },
+    {
+      "id": "6",
+      "title": "Penumpukan Sampah di Perumahan",
+      "location": "Semarang",
+      "image": "https://placehold.co/400"
+    },
+    {
+      "id": "7",
+      "title": "Sampah Elektronik di Tempat Pembuangan Akhir",
+      "location": "Makassar",
+      "image": "https://placehold.co/400"
+    },
+    {
+      "id": "8",
+      "title": "Sampah Medis di Rumah Sakit",
+      "location": "Yogyakarta",
+      "image": "https://placehold.co/400"
+    }
+  ]
+}
