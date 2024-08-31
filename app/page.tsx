@@ -1,26 +1,56 @@
+"use client";
+
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import NavigationWrapper from "./ui/navigation/nav-wrapper";
-import SwiperCards from "./ui/swiper/swiper-cards";
-import UploadImage from "./ui/upload-image";
+import UploadImage from "../components/ui/upload-image";
+import trashData from "@/app/api/trashdata.json";
+import { Button } from "@/components/ui/button";
+
+import FrontCarousel from "@/components/ui/carousel/front-carousel";
 
 export default function Home() {
+  const { trash } = trashData;
+
+  function dottedString(string: string, maxCharacters: number = 10) {
+    if (string.length > maxCharacters) {
+      return `${string.slice(0, maxCharacters)}...`;
+    }
+    return string;
+  }
+
   return (
     <>
       <main className="flex min-h-screen text-black flex-col items-center justify-between container lg:px-20 ">
         <div className="h-60 w-full">
-          <div className="hero w-full flex flex-col md:flex-row justify-evenly items-center">
-            <h1 className="flex flex-[1] font-extrabold text-5xl md:text-8xl text-center md:text-left">
-              CleanUp is Lifestyle!!!
-            </h1>
+          <div className="w-full flex flex-row justify-between items-center">
+            <div className="text-5xl font-bold basis-1/2">
+              <h1>KOLABORASI</h1>
+              <h1>UNTUK</h1>
+              <h1>LINGKUNGAN</h1>
+            </div>
 
             <Image
               src="/hero.png"
               alt="Hero Image"
               width={500}
               height={500}
-              className="flex flex-[1] mx-auto md:mx-0"
+              className="basis-1/2"
             />
+          </div>
+
+          <div className="my-5">
+            <h3 className="text-xl font-bold">
+              Sampah yang dapat kamu bersihkan
+            </h3>
+            <FrontCarousel data={trash} />
+            <Button variant="default">Lihat semuanya</Button>
+          </div>
+
+          <div className="my-5">
+            <h3 className="text-xl font-bold">Sampah telah bersih</h3>
+            <FrontCarousel data={trash} />
+            <Button variant="default">Lihat semuanya</Button>
           </div>
 
           {/* Contents */}

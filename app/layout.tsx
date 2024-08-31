@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { inter, quicksand } from "@/app/ui/fonts";
+import { inter, quicksand } from "@/components/ui/fonts";
 import "./globals.css";
-import NavigationWrapper from "./ui/navigation/nav-wrapper";
+import NavigationWrapper from "../components/ui/navigation/nav-wrapper";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -17,22 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased text-black`}>
-        <header className="flex bg-green-200 h-10 items-center">
+      <body className={`${inter.className} antialiased text-primary`}>
+        <header className="flex bg-primary h-10 items-center">
           <div className="container px-5 lg:px-20">
             <NavigationWrapper />
           </div>
         </header>
         {children}
-
-        <footer className="flex">
-          <h3>CleanUp!!</h3>
-          <ul>
-            <li>home</li>
-            <li>dev</li>
-            <li>contribution</li>
-          </ul>
-        </footer>
       </body>
     </html>
   );
