@@ -18,13 +18,13 @@ const NavigationWrapper: React.FC<NavigationWrapperProps> = ({
   }
 
   return (
-    <nav className="flex flex-row-reverse justify-between ">
+    <nav className="flex flex-row-reverse justify-between text-primary-foreground ">
       <button className="block md:hidden" onClick={toggleNavigation}>
         X
       </button>
       <div
-        className={`flex flex-col md:flex-row gap-8 transition-all duration-300 fixed md:static top-0 bg-green-200 md:bg-none w-40 md:w-full min-h-screen md:min-h-min items-end ${
-          isNavbarOpen ? " right-0 flex-col px-5" : "-right-[100%]"
+        className={`flex flex-col md:flex-row gap-8 transition-all duration-300 fixed md:static top-0 bg-primary md:bg-none w-40 md:w-full min-h-screen md:min-h-min items-end z-10 ${
+          isNavbarOpen ? "right-0 flex-col px-5" : "-right-[100%]"
         }`}
       >
         <button
